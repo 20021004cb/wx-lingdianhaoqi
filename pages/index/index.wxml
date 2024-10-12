@@ -1,0 +1,36 @@
+<view class="workView">
+<scroll-view scroll-x>
+<view class="work">
+<image src="/pages/index/images/food.jpg"></image>
+<view>菜品</view>
+</view>
+<view class="work">
+  <image src="/pages/index/images/hzp.jpg"></image>
+  <view>产品</view>
+</view>
+<view class="work">
+  <image src="/pages/index/images/people.jpg"></image>
+<view>人像</view>
+</view>
+<view class="work">
+  <image src="/pages/index/images/hzp.jpg"></image>
+  <view>产品</view>
+</view>
+<view class="work">
+  <image src="/pages/index/images/hzp.jpg"></image>
+  <view>产品</view>
+</view>
+<view class="work">
+  <image src="/pages/index/images/hzp.jpg"></image>
+  <view>产品</view>
+</view>
+<view class="work">
+  <image src="/pages/index/images/hzp.jpg"></image>
+  <view>产品</view>
+</view>
+</scroll-view>
+</view>
+
+<view class="workShowTitle">
+作品展示
+</view>
