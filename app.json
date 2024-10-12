@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/index",
+    "pages/video/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "上海零点好奇影视有线公司"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#ffffff",
+    "backgroundColor":"#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/indexSelected.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/index",
+      "iconPath": "images/photo.png",
+      "selectedIconPath": "images/photoSelected.png",
+      "text": "照片案例"
+    },{
+      "pagePath": "pages/video/index",
+      "iconPath": "images/video.png",
+      "selectedIconPath": "images/videoSelected.png",
+      "text": "视频案例"
+    },
+    {
+      "pagePath": "pages/about/index",
+      "iconPath": "images/about.png",
+      "selectedIconPath": "images/aboutSelected.png",
+      "text": "关于我们"
+    }
+  ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "component": true
+}
