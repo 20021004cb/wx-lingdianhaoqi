@@ -1,2 +1,5 @@
-<!--pages/video/index.wxml-->
-<text>pages/video/index.wxml</text>
+<view>
+  <video src="https://www.lingdianhaoqi.fun/media/video2.aef9257c.mp4"   show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' class="show-video"></video>
+  <view style="height: 50rpx;"></view>
+  <video src="https://www.lingdianhaoqi.fun/media/video3.1cbe17c9.mp4"    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' class="show-video"></video>
+</view>

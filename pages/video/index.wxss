@@ -1,1 +1,5 @@
 /* pages/video/index.wxss */
+.show-video{
+  width: 700rpx;
+  margin-left: 20rpx;
+}

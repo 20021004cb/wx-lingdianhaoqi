@@ -1,5 +1,8 @@
 {
+  "component": true,
   "usingComponents": {
-    "i-button": "/dist/button/index"
+    "van-button": "@vant/weapp/button/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
   }
 }

@@ -1,36 +1,54 @@
 <view class="workView">
-<scroll-view scroll-x>
-<view class="work">
-<image src="/pages/index/images/food.jpg"></image>
-<view>菜品</view>
+  <scroll-view scroll-x>
+
+    <view class="work" wx:for="{{indexTopShowList}}">
+      <image src="{{item.url}}"></image>
+      <view>{{item.name}}</view>
+    </view>
+
+  </scroll-view>
 </view>
-<view class="work">
-  <image src="/pages/index/images/hzp.jpg"></image>
-  <view>产品</view>
+<view class="workShowTitle">
+  作品展示
 </view>
-<view class="work">
-  <image src="/pages/index/images/people.jpg"></image>
-<view>人像</view>
+
+<view class="workList">
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/people2.dc635893.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/photo2.890b3817.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
 </view>
-<view class="work">
-  <image src="/pages/index/images/hzp.jpg"></image>
-  <view>产品</view>
-</view>
-<view class="work">
-  <image src="/pages/index/images/hzp.jpg"></image>
-  <view>产品</view>
-</view>
-<view class="work">
-  <image src="/pages/index/images/hzp.jpg"></image>
-  <view>产品</view>
-</view>
-<view class="work">
-  <image src="/pages/index/images/hzp.jpg"></image>
-  <view>产品</view>
-</view>
-</scroll-view>
+
+<view style="margin-top: 30rpx;margin-bottom: 50rpx;width: 700rpx;margin-left: 25rpx;">
+  <van-button type="primary" block color="black" plain bindtap="goAllImage">查看全部</van-button>
 </view>
 
 <view class="workShowTitle">
-作品展示
+  视频展示 
 </view>
+<view>
+  <video src="https://www.lingdianhaoqi.fun/media/video2.aef9257c.mp4"   show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' class="show-video"></video>
+  <view style="height: 50rpx;"></view>
+  <video src="https://www.lingdianhaoqi.fun/media/video3.1cbe17c9.mp4"    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' class="show-video"></video>
+</view>
+<view class="bottom-div">
+<p bindtap="onShow">微信：17502181757</p>
+<p>电话：17502181757</p>
+<p>官网：www.lingdianhaoqi.fun</p>
+</view>
+<van-action-sheet show="{{ show }}" title="上海零点好奇影视有限公司" bind:close="onClose" title-style="textAlign: 'left'">
+  <view>
+  <h style="font-size: 50rpx;margin: 200rpx;">长按添加微信</h>
+  <image bindlongpress="longPressHandler" show-menu-by-longpress="{{true}}" style="margin-left: 160rpx;width: 400rpx;"
+   src="https://www.lingdianhaoqi.fun/img/shx-wx.290ff93d.png"
+   data-src="https://www.lingdianhaoqi.fun/img/shx-wx.290ff93d.png"></image>
+  </view>
+</van-action-sheet>

@@ -1,1 +1,23 @@
 /* pages/about/index.wxss */
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10rpx;
+  margin: 20rpx;
+}
+
+.item {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.bottom-div{
+  background-color: black;
+  height: 300rpx;
+}
+.bottom-div p{
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  color: aliceblue;
+  display: block;
+}

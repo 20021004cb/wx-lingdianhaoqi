@@ -1,66 +1,27 @@
-// pages/about/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    showList:[
+      {url:"https://www.lingdianhaoqi.fun/img/hx8.0936e4ae.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx8.0936e4ae.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx12.502e30ba.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx17.10f34bcd.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx16.253134fe.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx13.3e26913b.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx12.502e30ba.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx8.0936e4ae.jpg"},
+      {url:"https://www.lingdianhaoqi.fun/img/hx8.0936e4ae.jpg"}
+    ],
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  // 监听
+  activeClick(e) {
+    let index = e.currentTarget.dataset.tag;
+    this.setData({
+      current: index
+    })
   }
 })

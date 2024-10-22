@@ -1,0 +1,23 @@
+<!--pages/photo/index.wxml-->
+<view class="workList">
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+  <view>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;"></image>
+    <image src="https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg" style="width: 340rpx;margin-left: 20rpx;"></image>
+  </view>
+</view>

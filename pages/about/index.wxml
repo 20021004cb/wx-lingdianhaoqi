@@ -1,2 +1,22 @@
 <!--pages/about/index.wxml-->
-<text>pages/about/index.wxml</text>
+<view style="height: 300rpx;overflow: hidden;margin-left: 80rpx;">
+<image  src="/pages/about/images/logo.jpg"></image>
+</view>
+<view  style="text-align: center;font-size: 35rpx;margin-top: 50rpx;background-color: rgb(245, 243, 243);padding-top: 100rpx;padding-bottom: 100rpx;padding-left: 30rpx;padding-right: 30rpx;">
+<p style=" display: block;"></p>
+<div>上海零点好奇影视有限公司-商业广告摄影、产品拍摄、家电拍摄、化妆品拍摄、商业摄影、五金拍摄、箱包拍摄、工业产品拍摄、手表拍摄、卫浴拍摄、酒类拍摄、饮料拍摄、数码拍摄等</div>
+<div style="color: darkgray;">https://www.lingdianhaoqi.fun</div>
+</view>
+<view class="box">
+  <block wx:for="{{showList}}">
+    <view>
+    <image style="width: 230rpx;height: 200rpx;" src="{{item.url}}"></image>
+    </view>
+  </block>
+</view>
+<view class="bottom-div">
+<p bindtap="onShow">微信：17502181757</p>
+<p>电话：17502181757</p>
+<p>官网：www.lingdianhaoqi.fun</p>
+</view>
+

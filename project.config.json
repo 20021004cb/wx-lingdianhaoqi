@@ -15,9 +15,10 @@
     "packNpmRelationList": [
       {
         "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "/"
+        "miniprogramNpmDistDir": "./"
       }
     ],
+    "packNpmManually": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],

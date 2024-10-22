@@ -3,47 +3,41 @@ const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia0
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {
-      avatarUrl: defaultAvatarUrl,
-      nickName: '',
-    },
-    hasUserInfo: false,
-    canIUseGetUserProfile: wx.canIUse('getUserProfile'),
-    canIUseNicknameComp: wx.canIUse('input.type.nickname'),
+    indexTopShowList:[
+      {name:"菜品",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"},
+      {name:"产品",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"},
+      {name:"人像",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"},
+      {name:"菜品",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"},
+      {name:"菜品",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"},
+      {name:"菜品",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"},
+      {name:"菜品",url:"https://www.lingdianhaoqi.fun/img/food2.c329686e.jpg"}
+    ],
+    show: false,
   },
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  onShow(){
+    this.setData({ show: true });
   },
-  onChooseAvatar(e) {
-    const { avatarUrl } = e.detail
-    const { nickName } = this.data.userInfo
-    this.setData({
-      "userInfo.avatarUrl": avatarUrl,
-      hasUserInfo: nickName && avatarUrl && avatarUrl !== defaultAvatarUrl,
-    })
+  onClose() {
+    this.setData({ show: false });
   },
-  onInputChange(e) {
-    const nickName = e.detail.value
-    const { avatarUrl } = this.data.userInfo
-    this.setData({
-      "userInfo.nickName": nickName,
-      hasUserInfo: nickName && avatarUrl && avatarUrl !== defaultAvatarUrl,
-    })
+  videoErrorCallback: function (e) {
+    console.log('视频错误信息:');
+    console.log(e.detail.errMsg);
   },
-  getUserProfile(e) {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+  longPressHandler: function(e) {
+    // 处理长按事件
+    var url=e.target.dataset.src
+    console.log(url)
+    wx.scanCode({
+      scanType: ['qrCode'],
+      success: function(res) {
+        console.log(res.result);
       }
-    })
+    });
   },
+  goAllImage(){
+    wx.switchTab({
+      url: '/pages/photo/index'
+    })
+  }
 })
